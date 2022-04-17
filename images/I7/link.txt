@@ -1,0 +1,10 @@
+https://www.lenovo.com/in/en/laptops/legion-laptops/legion-5-series/Legion-5-15ACH6H/p/88GMY501582?r
+
+Processor : AMD Ryzen™ 7 5800H Processor (8 Cores / 16 Threads, 3.20 GHz, up to 4.40 GHz with Max Boost, 4 MB Cache L2 / 16 MB Cache L3)
+Operating System : Windows 11 Home 64
+Display : 39.62cms (15.6) WQHD (2560x1440) IPS 300nits Anti-glare 165Hz 100% sRGB Dolby Vision Free-Sync G-Sync DC Dimmer
+RAM : 16 GB SO-DIMM DDR4 3200MHz
+Storage : 1 TB M.2 2280 SSD
+Graphic : NVIDIA GeForce® RTX™ 3060 6GB GDDR6
+
+MRP : 108990
