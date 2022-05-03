@@ -134,7 +134,7 @@ header .row {
   width: 80px;
   height: 5px;
   position: absolute;
-  background: #ff523b;
+  background: darkolivegreen;
   border-radius: 5px;
   bottom: 0;
   left: 50%;
@@ -244,6 +244,7 @@ footer h3 {
   flex: 1;
   text-align: center;
   color: white;
+  text-decoration: none;
 
 }
 .footer-col-2 img {
@@ -387,15 +388,20 @@ select:focus {
 }
 
 /* -----------products-details.html---------- */
-
+.col-2 a:hover{
+  background-color: DarkOliveGreen;
+  color: white;
+  transition: 0.5s;
+}
 .single-details {
   margin-top: 80px;
 }
 .col-2 a {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 3px 15px;
   text-decoration: none;
+  border: 1px solid darkolivegreen; 
 }
 
 .single-details .col-2 img {
