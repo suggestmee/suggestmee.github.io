@@ -50,37 +50,69 @@
   </head>
 
   <body>
-    <div class="container">
+    <header>
       <div class="navbar">
         <div class="logo">
-          <a href="/"><img src="./images/logo.png" alt="" width="125px" /></a>
+          <a href="/"><img src="./images/logo.png" alt="suggestmee logo" /></a>
         </div>
-        <nav>
+        <nav class="suggestme-nav">
           <ul id="menuItems">
-            <li><a href="/">Home</a></li>
+            <li><a href="/">HOME</a></li>
+            <!--<li>
+              <a
+                href="https://www.facebook.com/SuggestMee-106460971998723/"
+                target="_blank"
+                >ABOUT</a
+              >
+            </li>--->
             <li>
               <a
                 href="https://www.facebook.com/SuggestMee-106460971998723/"
                 target="_blank"
-                >Follow Us</a
+                >FOLLOW</a
               >
             </li>
             <li>
               <a href="mailto:suggestme60@gmail.com?" target="_blank"
-                >Contact Us</a
+                >CONTACT</a
               >
             </li>
+            <img
+              src="./images/close.svg"
+              class="menu-icon"
+              onclick="menutoggle()"
+              alt="menu logo"
+              style="top: 110px"
+            />
           </ul>
         </nav>
 
-        <img
-          src="./images/menu.png"
-          class="menu-icon"
-          onclick="menutoggle()"
-          alt=""
-        />
+        <div class="mobile-social-icons">
+          <a
+            href="https://www.facebook.com/SuggestMee-106460971998723/"
+            target="_blank"
+            ><img src="./images/fb.svg" alt="menu logo" class="social-icons"
+          /></a>
+          <a href="https://www.instagram.com/suggestmee_60/" target="_blank"
+            ><img src="./images/insta.svg" alt="menu logo" class="social-icons"
+          /></a>
+          <a href="mailto:suggestme60@gmail.com?" target="_blank"
+            ><img src="./images/mail.png" alt="menu logo" class="social-icons"
+          /></a>
+
+          <img
+            style="position: static"
+            src="./images/menu.png"
+            class="menu-icon"
+            id="menuIconClose"
+            onclick="menutoggle()"
+            alt="menu logo"
+          />
+        </div>
+
+        <hr style="margin: 30px 0" />
       </div>
-    </div>
+    </header>
 
     <!-- -----single products details 1 ----- -->
     <div class="small-container single-details">
@@ -273,17 +305,9 @@
     <footer>
       <div class="footer">
         <div class="container">
-          <div class="row">
-            <!------<div class="footer-col-1">
-              <h3>Download our App</h3>
-              <p>Download our App for Android and ios mobile phone.</p>
-              <div class="app-logo">
-                <img src="./images/play-store.png" alt="" />
-                <img src="./images/app-store.png" alt="" />
-              </div>
-            </div>------->
+          <div class="">
             <div class="footer-col-2">
-              <a href="/"><h1>SUGGESTMEE</h1></a>
+              <a href="/" style="text-decoration: none"><h1>SUGGESTMEE</h1></a>
               <p>Make your buying decision with us</p>
             </div>
             <!---<div class="footer-col-4">
@@ -294,7 +318,7 @@
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">Youtube</a></li>
               </ul>
-            </div>---->
+            </div>--->
           </div>
           <hr />
         </div>
@@ -303,14 +327,17 @@
 
     <script>
       var menuItems = document.getElementById("menuItems");
+      var menuIconClose = document.getElementById("menuIconClose");
 
       menuItems.style.maxHeight = "0px";
 
       function menutoggle() {
         if (menuItems.style.maxHeight == "0px") {
-          menuItems.style.maxHeight = "200px";
+          menuItems.style.maxHeight = "100vh";
+          menuIconClose.style.display = "none";
         } else {
-          menuItems.style.maxHeight = "0px";
+          menuItems.style.maxHeight = "0";
+          menuIconClose.style.display = "block";
         }
       }
     </script>
