@@ -230,7 +230,8 @@ footer h3 {
 }
 
 .footer-col-2 {
-  margin: 114px 0px 41px calc((100% - 980px) * 0.5);
+  /*margin: 114px 0px 41px calc((100% - 980px) * 0.5);*/
+  text-align: center;
 }
 
 .footer-col-1,
@@ -307,6 +308,11 @@ footer hr {
   display: none;
 }
 @media only screen and (max-width: 800px) {
+  .mobile-social-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
   nav ul {
     position: absolute;
     top: 0;
@@ -363,10 +369,7 @@ footer hr {
 /* media query for less than 600 screen size  */
 
 @media only screen and (max-width: 600px) {
-  .mobile-social-icons {
-    display: flex;
-    justify-content: space-around;
-  }
+  
 
   .row {
     text-align: center;
