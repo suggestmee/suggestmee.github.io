@@ -216,13 +216,13 @@ small {
 /* footer */
 
 .footer {
-  background-color: rgb(231, 238, 234);
-  color: #8a8a8a;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
   font-size: 14px;
   padding: 60px 0 20px;
 }
 .footer p {
-  color: #000;
+  color: #fff;
 }
 footer h3 {
   color: #fff;
@@ -245,7 +245,7 @@ footer h3 {
 }
 .footer-col-2 h1 {
   flex: 1;
-  color: #000;
+  color: #fff;
 }
 .footer-col-2 img {
   width: 180px;
@@ -456,7 +456,7 @@ select:focus {
 
 /* -----------products-details.html---------- */
 .col-2 a:hover{
-  background-color: DarkOliveGreen;
+  background-color: #0070b9;
   color: white;
   transition: 0.5s;
 }
@@ -465,10 +465,17 @@ select:focus {
 }
 .col-2 a {
   background-color: white;
-  color: black;
+  color: #0070b9;
   padding: 3px 15px;
   text-decoration: none;
-  border: 1px solid darkolivegreen; 
+  border: 1px solid #0070b9; 
+  border-radius: 20px;
+  font-weight: bold
+}
+
+.col-2 a.btn{
+  display: inline-block;
+  margin-top: 20px
 }
 
 .single-details .col-2 img {
