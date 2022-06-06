@@ -11,6 +11,27 @@ body {
 .container {
   margin: auto;
 }
+.pros-con-content{
+  display: inline-block;
+}
+.desktop-separator{
+  margin: 30px 0
+}
+
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.red{
+  background-color: #ff523b;
+}
+
+.green{
+  background-color: green;
+}
 
 .home-page-image-container {
   height: calc(100vh - 82px);
@@ -369,7 +390,13 @@ footer hr {
 /* media query for less than 600 screen size  */
 
 @media only screen and (max-width: 600px) {
-  
+  .desktop-separator{
+    margin: 30px 0 0;
+  }
+
+  .single-details:first-of-type{
+margin-top: 0;
+  }
 
   .row {
     text-align: center;
