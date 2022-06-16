@@ -11,25 +11,25 @@ body {
 .container {
   margin: auto;
 }
-.pros-con-content{
+.pros-con-content {
   display: inline-block;
 }
-.desktop-separator{
-  margin: 30px 0
+.desktop-separator {
+  margin: 30px 0;
 }
 
-.dot{
+.dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
 }
-.red{
+.red {
   background-color: #ff523b;
 }
 
-.green{
+.green {
   background-color: green;
 }
 
@@ -333,7 +333,7 @@ footer hr {
     display: flex;
     justify-content: space-around;
   }
-  
+
   nav ul {
     position: absolute;
     top: 0;
@@ -390,12 +390,12 @@ footer hr {
 /* media query for less than 600 screen size  */
 
 @media only screen and (max-width: 600px) {
-  .desktop-separator{
+  .desktop-separator {
     margin: 30px 0 0;
   }
 
-  .single-details:first-of-type{
-margin-top: 0;
+  .single-details:first-of-type {
+    margin-top: 0;
   }
 
   .row {
@@ -482,7 +482,7 @@ select:focus {
 }
 
 /* -----------products-details.html---------- */
-.col-2 a:hover{
+.col-2 a:hover {
   background-color: #0070b9;
   color: white;
   transition: 0.5s;
@@ -495,14 +495,14 @@ select:focus {
   color: #0070b9;
   padding: 3px 15px;
   text-decoration: none;
-  border: 1px solid #0070b9; 
+  border: 1px solid #0070b9;
   border-radius: 20px;
-  font-weight: bold
+  font-weight: bold;
 }
 
-.col-2 a.btn{
+.col-2 a.btn {
   display: inline-block;
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .single-details .col-2 img {
@@ -619,4 +619,68 @@ form a {
   margin-top: 8px;
   transform: translate(100px);
   transition: transform 1s;
+}
+
+.about-section-title {
+  margin-left: 100px;
+  font-size: 50px;
+  font-family: "suez one", serif;
+  color: rgb(39, 36, 67);
+  text-align: left;
+  width: 720px;
+  letter-spacing: 1px;
+}
+
+.about-section-description-container {
+  display: flex;
+  margin-top: 60px;
+}
+.about-section-description-img {
+  min-height: 390px;
+  width: 45%;
+  background: url(./images/description-img.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+
+  /* <img src="./images/description-img.jpg" alt="" /> */
+}
+.about-section-description-text {
+  width: 55%;
+  background-color: rgb(218, 57, 43);
+  color: white;
+  padding: 30px;
+  text-align: left;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-section-description-text img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .about-section-title {
+    margin-left: 0;
+    width: 100%;
+    font-size: 30px;
+    padding: 0 20px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-section-description-container {
+    flex-direction: column;
+  }
+
+  .about-section-description-img {
+    width: 100%;
+    min-height: 300px;
+  }
+  .about-section-description-text {
+    width: 100%;
+  }
 }
